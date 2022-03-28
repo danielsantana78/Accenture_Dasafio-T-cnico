@@ -50,7 +50,7 @@ public class Paginas_AbaEnterProductData extends BaseSelenium {
 
 	private void clicaEmOptionalProducts() {
 		esperarElementoExistir(eleDesafio.getRdoOptionalProducts());
-		System.out.println("verifica se o objeto DamageInsurance existe na tela");
+		System.out.println("verifica se o objeto LegalDefenseInsurance existe na tela");
 		moverParaElementoeClicar(eleDesafio.getRdoOptionalProducts());
 		System.out.println("clica em Legal Defense Insurance do campo Optional Products");
 	}

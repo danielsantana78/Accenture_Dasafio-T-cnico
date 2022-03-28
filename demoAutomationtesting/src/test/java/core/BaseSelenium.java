@@ -124,6 +124,10 @@ public class BaseSelenium {
 	public String extrairTextoDoElemento(By elemento) {
 		return procurar(elemento).getText();
 	}
+	
+	public String extrairTextoDoObjeto(By elemento, String string) {
+		return procurar(elemento).getText();
+	}
 
 	public void comboBoxPorTexto(By elemento, String itemDoCombo) {
 		comboBox(elemento).selectByVisibleText(itemDoCombo);

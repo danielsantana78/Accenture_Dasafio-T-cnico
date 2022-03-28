@@ -11,7 +11,6 @@ public class Paginas_AbaSelectPriceOption extends BaseSelenium {
 
 		clicaNaOpcaoGolg();
 		clicaNoBotaoNext();
-		
 	}
 
 	// métodos dos preenchimentos
@@ -22,12 +21,11 @@ public class Paginas_AbaSelectPriceOption extends BaseSelenium {
 		moverParaElementoeClicar(eleDesafio.getRdoOptionGold());
 		System.out.println("clica no radio button da opção Gold");
 	}
-	
-	
+
 	private void clicaNoBotaoNext() {
 		esperarElementoExistir(eleDesafio.getBtnNextSendQuote());
 		System.out.println("verifica se o objeto EnterInsurantData do botão Next existe na tela");
-	  	clicar(eleDesafio.getBtnNextSendQuote());
+		clicar(eleDesafio.getBtnNextSendQuote());
 		System.out.println("clicou no botão NEXT >>");
 		System.out.println(" ");
 		System.out.println("redireciona para o preenchimento da aba Send Quote");
