@@ -9,11 +9,11 @@ public class Paginas_AbaEnterProductData extends BaseSelenium {
 	private Elementos_AbaEnterProductData eleDesafio = new Elementos_AbaEnterProductData();
 
 	public void preenchoOFormulárioAbaEnterProductDataEPressioneNext() {
-
 		preencheCampoStartDate();
 		selecionaInsuranceSum();
 		selecionaMeritRating();
 		selecionaDamageInsurance();
+		clicaEmOptionalProducts();
 		selecionaCourtesyCar();
 		clicaNoBotaoNext();
 	}
@@ -46,6 +46,13 @@ public class Paginas_AbaEnterProductData extends BaseSelenium {
 		System.out.println("verifica se o objeto DamageInsurance existe na tela");
 		comboBoxPorValor(eleDesafio.getSlcDamageInsurance(), "Full Coverage");
 		System.out.println("seleciona a opção Full Coverage no campo Damage Insurance");
+	}
+
+	private void clicaEmOptionalProducts() {
+		esperarElementoExistir(eleDesafio.getRdoOptionalProducts());
+		System.out.println("verifica se o objeto DamageInsurance existe na tela");
+		moverParaElementoeClicar(eleDesafio.getRdoOptionalProducts());
+		System.out.println("clica em Legal Defense Insurance do campo Optional Products");
 	}
 
 	private void selecionaCourtesyCar() {

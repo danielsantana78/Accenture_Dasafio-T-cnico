@@ -16,12 +16,12 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 		selecionaCountry();
 		preencheCampoZipCode();
 		preencheCampoCity();
-		selecionaOccupation();
+		selecionaOccupation();		
+		clicaEmOther();		
 		preencheCampoWebsite();
 		clicaNoBotaoNext();
 
 		// implementar Gender
-		// clicar(eleDesafio.getRdoOther());
 		//moverParaElemento(eleDesafio.getRdoOther());
 		// implementar Hobbies
 		// implementar anexarDocumentos();
@@ -84,6 +84,13 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 		System.out.println("verifica se o objeto Occupation existe na tela");
 		comboBoxPorValor(eleDesafio.getSlcOccupation(), "Selfemployed");
 		System.out.println("seleciona a opção Autônomo do campo Occupation");
+	}
+	
+	private void clicaEmOther() {
+		esperarElementoExistir(eleDesafio.getRdoOther());
+		System.out.println("verifica se o objeto id Other existe na tela");
+		moverParaElementoeClicar(eleDesafio.getRdoOther());
+		System.out.println("clica em Other do campo Hobbies");
 	}
 
 	private void preencheCampoWebsite() {

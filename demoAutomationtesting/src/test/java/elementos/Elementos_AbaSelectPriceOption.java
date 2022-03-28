@@ -4,12 +4,16 @@ import org.openqa.selenium.By;
 
 public class Elementos_AbaSelectPriceOption {
 
+	private By rdoOptionGold = By.xpath("//input[contains(@value,'Gold')]");
+	private By btnNextSendQuote = By.xpath("//button[@name='Next (Send Quote)'][contains(.,'Next »')]");
 	
-	private By rdoOptionSilver = By.xpath("//input[@id='selectsilver'][@name='Select Option']");
 
-	public By getRdoOptionSilver() {
-		return rdoOptionSilver;
+	public By getRdoOptionGold() {
+		return rdoOptionGold;
 	}
 
-	
+	public By getBtnNextSendQuote() {
+		return btnNextSendQuote;
+	}
+
 }

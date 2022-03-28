@@ -12,6 +12,8 @@ public class Elementos_AbaEnterProductData {
 	private By btnNextSelectPriceOption = By.xpath("//div//button[@id='nextselectpriceoption']");
 	private By cmpStartDate = By.xpath("//input[@id='startdate']");
 	private By slcInsuranceSum = By.xpath("//section[@class='idealsteps-step']//select[@id='insurancesum']");
+	private By rdoOptionalProducts = By
+			.xpath("//label[@class='ideal-radiocheck-label'][contains(.,'Legal Defense Insurance')]");
 
 	public By getSlcInsuranceSum() {
 		return slcInsuranceSum;
@@ -37,4 +39,7 @@ public class Elementos_AbaEnterProductData {
 		return cmpStartDate;
 	}
 
+	public By getRdoOptionalProducts() {
+		return rdoOptionalProducts;
+	}
 }

@@ -222,6 +222,14 @@ public class BaseSelenium {
 		action.moveToElement(elemento).click().build().perform();
 	}
 
+	
+	public void moverParaElementoeClicar(By elemento) {
+		Actions action = new Actions(getDriver());
+		WebElement element = procurar(elemento);
+		action.moveToElement(element).click().build().perform();
+	}
+	
+	
 	public void mouseHover(WebElement elemento) {
 		Actions action = new Actions(driver);
 		action.moveToElement(elemento).click().build().perform();
