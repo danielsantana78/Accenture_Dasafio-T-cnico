@@ -21,8 +21,6 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 		preencheCampoWebsite();
 		upLoadPicture(); // Upload Picture não funcionou corretamente
 		clicaNoBotaoNext();
-		
-		// implementar Gender
 	}
 
 	// métodos dos preenchimentos dos campos
@@ -47,6 +45,13 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 		limparCampo(eleDesafio.getCmpbirthdate());
 		escreveNoCampo(eleDesafio.getCmpbirthdate(), "09/09/1978");
 		System.out.println("preenche o campo Date of Birth com uma data");
+	}
+
+	private void clicaNoRadioButtonMale() {
+		esperarElementoExistir(eleDesafio.getRdoGender());
+		System.out.println("verifica se o objeto gendermale do radiobutton existe na tela");
+		moverParaElementoeClicar(eleDesafio.getRdoGender());
+		System.out.println("seleciona a opção Male do campo Gender");
 	}
 
 	private void preencheCampoStreetAddress() {
@@ -112,14 +117,4 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 		System.out.println(" ");
 		System.out.println("redireciona para o preenchimento da aba Enter Product Data");
 	}
-	
-	private void clicaNoRadioButtonMale() {
-		esperarElementoExistir(eleDesafio.getRdoGender());
-		System.out.println("verifica se o objeto gendermale do radiobutton existe na tela");
-		moverParaElementoeClicar(eleDesafio.getRdoGender());
-		System.out.println("seleciona a opção Male do campo Gender");
-		System.out.println(" ");
-		System.out.println("redireciona para o preenchimento da aba Enter Product Data");
-	}
-	
 }

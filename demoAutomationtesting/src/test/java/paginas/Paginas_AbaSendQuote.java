@@ -91,6 +91,7 @@ public class Paginas_AbaSendQuote extends BaseSelenium {
 		esperarElementoExistir(eleDesafio.getBtnOK());
 		System.out.println(" ");
 		System.out.println("verifica se o objeto confirm do botão OK existe na tela");
+		System.out.println(" ");
 		clicar(eleDesafio.getBtnOK());
 		System.out.println("clicou no botão OK");
 		System.out.println("fecha o Pop-Up");
