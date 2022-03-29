@@ -83,13 +83,13 @@ public class Paginas_AbaSendQuote extends BaseSelenium {
 		esperarElementoExistir(eleDesafio.getLblSuccess());
 		extrairTextoDoObjeto(eleDesafio.getLblSuccess(), "Sending e-mail success!");
 		esperarPadrao(2);
+		System.out.println(" ");
 		System.out.println("verificar a mensagem “Sending e-mail success!” na tela");
 	}
 
 	private void clicaNoBotaoOK() {
 		esperarPadrao(2);
 		esperarElementoExistir(eleDesafio.getBtnOK());
-		System.out.println(" ");
 		System.out.println("verifica se o objeto confirm do botão OK existe na tela");
 		System.out.println(" ");
 		clicar(eleDesafio.getBtnOK());
