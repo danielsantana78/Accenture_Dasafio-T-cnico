@@ -25,18 +25,18 @@ public class Paginas_AbaEnterVehicleData extends BaseSelenium {
 		clicaNoBotaoNext();
 	}
 
-	// métodos dos preenchimentos
+	// métodos dos preenchimentos dos campos
 
 	private void selecionaMake() {
 		esperarElementoExistir(eleDesafio.getCmpMake());
-		System.out.println("verifica se o objeto CmpMake existe na tela");
+		System.out.println("verifica se o objeto make existe na tela");
 		comboBoxPorValor(eleDesafio.getCmpMake(), "BMW");
 		System.out.println("escolheu na lista Make o BMW");
 	}
 
 	private void selecionaModel() {
 		esperarElementoExistir(eleDesafio.getCmpModel());
-		System.out.println("verifica se o objeto Model existe na tela");
+		System.out.println("verifica se o objeto model existe na tela");
 		comboBoxPorValor(eleDesafio.getCmpModel(), "Motorcycle");
 		System.out.println("escolheu na lista Model o Motorcycle");
 	}

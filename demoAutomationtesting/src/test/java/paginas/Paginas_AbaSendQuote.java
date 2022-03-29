@@ -19,9 +19,10 @@ public class Paginas_AbaSendQuote extends BaseSelenium {
 
 	public void verificoAMensagemSendingEMailSuccessNaTela() {
 		verificaAMensagem();
+		clicaNoBotaoOK();
 	}
 
-	// métodos dos preenchimentos
+	// métodos dos preenchimentos dos campos
 
 	private void preencheCampoEMail() {
 		esperarElementoExistir(eleDesafio.getCmpEMail());
@@ -75,10 +76,19 @@ public class Paginas_AbaSendQuote extends BaseSelenium {
 	}
 
 	private void verificaAMensagem() {
-		esperarPadrao(15);
+		esperarPadrao(10);
 		esperarElementoExistir(eleDesafio.getLblSuccess());
 		System.out.println("verifica se o objeto outline: green dotted 2px !important; existe na tela");
 		extrairTextoDoObjeto(eleDesafio.getLblSuccess(), "Sending e-mail success!");
 		System.out.println("verificar a mensagem “Sending e-mail success!” na tela");
+	}
+
+	private void clicaNoBotaoOK() {
+		esperarElementoExistir(eleDesafio.getBtnOK());
+		System.out.println("verifica se o objeto confirm do botão OK existe na tela");
+		clicar(eleDesafio.getBtnOK());
+		System.out.println("clicou no botão OK");
+		System.out.println(" ");
+		System.out.println("fecha o Pop-Up");
 	}
 }

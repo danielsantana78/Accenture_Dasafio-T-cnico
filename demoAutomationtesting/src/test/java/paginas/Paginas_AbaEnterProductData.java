@@ -18,7 +18,7 @@ public class Paginas_AbaEnterProductData extends BaseSelenium {
 		clicaNoBotaoNext();
 	}
 
-	// métodos dos preenchimentos
+	// métodos dos preenchimentos dos campos
 
 	private void preencheCampoStartDate() {
 		esperarElementoExistir(eleDesafio.getCmpStartDate());

@@ -13,7 +13,7 @@ public class Paginas_AbaSelectPriceOption extends BaseSelenium {
 		clicaNoBotaoNext();
 	}
 
-	// métodos dos preenchimentos
+	// métodos dos preenchimentos dos campos
 
 	private void clicaNaOpcaoGolg() {
 		esperarElementoExistir(eleDesafio.getRdoOptionGold());

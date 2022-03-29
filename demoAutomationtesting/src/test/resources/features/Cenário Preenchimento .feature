@@ -1,4 +1,4 @@
-Feature: Criar uma nova conta para usuário não cadastrado
+Feature: Preencher as abas Enter Vehicle Data, Enter Insurant Data, Enter Product Data, Select Price Option, Send Quote e Verificar a mensagem “Sending e-mail success!” na tela.
 
 Background:
   Given que eu acesso O Site  "http://sampleapp.tricentis.com/101/app.php"

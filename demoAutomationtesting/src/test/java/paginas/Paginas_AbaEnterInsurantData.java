@@ -22,12 +22,10 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 		clicaNoBotaoNext();
 
 		// implementar Gender
-		//moverParaElemento(eleDesafio.getRdoOther());
-		// implementar Hobbies
 		// implementar anexarDocumentos();
 	}
 
-	// métodos dos preenchimentos
+	// métodos dos preenchimentos dos campos
 
 	private void preencheCampoFirstName() {
 		esperarElementoExistir(eleDesafio.getCmpFirstname());
