@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 		"com.cucumber.listener.ExtentCucumberFormatter:Evidencias/Status - Automacao de Testes.html",
 		"html:src/test/resources/relatorios/cucumber-reports/",
 		"json:src/test/resources/relatorios/cucumber-reports/cucumber.json",
-		"junit:src/test/resources/reslatorios/cucumber-reports/cucumber.xml" }, glue = { "" },
+		"junit:src/test/resources/relatorios/cucumber-reports/cucumber.xml" }, glue = { "" },
 
 		tags = "@Preenchimento",
 

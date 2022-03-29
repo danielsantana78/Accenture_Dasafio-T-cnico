@@ -62,7 +62,7 @@ public class Paginas_AbaSendQuote extends BaseSelenium {
 	private void preencheCampoComments() {
 		esperarElementoExistir(eleDesafio.getCmpComments());
 		System.out.println("verifica se o objeto Comments existe na tela");
-		escreveNoCampo(eleDesafio.getCmpComments(), "Desejo muitíssimo fazer parte do time da Accenture!");
+		escreveNoCampo(eleDesafio.getCmpComments(), "DESAFIO TÉCNICO – TESTE SELENIUM - DESAFIO TÉCNICO – TESTE SELENIUM");
 		System.out.println("preenche o campo Comments com um texto");
 	}
 
@@ -72,23 +72,27 @@ public class Paginas_AbaSendQuote extends BaseSelenium {
 		clicar(eleDesafio.getBtnsendemail());
 		System.out.println("clicou no botão << Send >>");
 		System.out.println(" ");
-		System.out.println("exibe o Pop-Up com a mensagem " + "Sending e-mail success!");
+		System.out.println("aguarda o Loading do Pop-Up por 10 segundos");
+		System.out.println(" ");
+		System.out.println("exibe o Pop-Up com a mensagem Sending e-mail success!");
 	}
 
 	private void verificaAMensagem() {
-		esperarPadrao(10);
+		esperarPadrao(10);		
+		System.out.println("verifica se o objeto blSuccess existe na tela");
 		esperarElementoExistir(eleDesafio.getLblSuccess());
-		System.out.println("verifica se o objeto outline: green dotted 2px !important; existe na tela");
 		extrairTextoDoObjeto(eleDesafio.getLblSuccess(), "Sending e-mail success!");
+		esperarPadrao(2);
 		System.out.println("verificar a mensagem “Sending e-mail success!” na tela");
 	}
 
 	private void clicaNoBotaoOK() {
+		esperarPadrao(2);
 		esperarElementoExistir(eleDesafio.getBtnOK());
+		System.out.println(" ");
 		System.out.println("verifica se o objeto confirm do botão OK existe na tela");
 		clicar(eleDesafio.getBtnOK());
 		System.out.println("clicou no botão OK");
-		System.out.println(" ");
 		System.out.println("fecha o Pop-Up");
 	}
 }

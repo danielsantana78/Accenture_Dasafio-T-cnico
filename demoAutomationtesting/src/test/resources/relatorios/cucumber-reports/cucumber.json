@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4852464700,
+              "duration": 3102112500,
               "status": "passed"
             },
             "line": 4,
@@ -39,7 +39,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1322977500,
+              "duration": 1259230100,
               "status": "passed"
             },
             "line": 8,
@@ -51,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 1438769300,
+              "duration": 1377856600,
               "status": "passed"
             },
             "line": 9,
@@ -63,7 +63,7 @@
           },
           {
             "result": {
-              "duration": 733749000,
+              "duration": 684699300,
               "status": "passed"
             },
             "line": 10,
@@ -75,7 +75,7 @@
           },
           {
             "result": {
-              "duration": 813712700,
+              "duration": 784875400,
               "status": "passed"
             },
             "line": 11,
@@ -87,7 +87,7 @@
           },
           {
             "result": {
-              "duration": 772823100,
+              "duration": 782786000,
               "status": "passed"
             },
             "line": 12,
@@ -99,7 +99,7 @@
           },
           {
             "result": {
-              "duration": 10131904600,
+              "duration": 14149041000,
               "status": "passed"
             },
             "line": 13,
@@ -122,6 +122,6 @@
     "description": "",
     "id": "preencher-as-abas-enter-vehicle-data,-enter-insurant-data,-enter-product-data,-select-price-option,-send-quote-e-verificar-a-mensagem-“sending-e-mail-success!”-na-tela.",
     "keyword": "Feature",
-    "uri": "Cenário Preenchimento .feature"
+    "uri": "Cenário Preenchimento.feature"
   }
 ]
