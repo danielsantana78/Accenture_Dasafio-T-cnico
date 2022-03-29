@@ -19,7 +19,9 @@ public class Elementos_AbaEnterInsurantData {
 	private By rdoOther = By.xpath("//p//label[@class='ideal-radiocheck-label'][contains(.,'Other')]");
 	private By cmpWebSite = By.xpath("//section[@class='idealsteps-step']//input[@name='Website']");
 	private By cmpUpLoadPicture = By.xpath("//input[@class='ideal-file-filename']");
-	private By btnNextEnterInsurantData = By.xpath("//div//button[@id='nextenterproductdata']");
+	private By btnNextEnterInsurantData = By.xpath("//div//button[@id='nextenterproductdata']");	
+	private By rdoGender = By.xpath("//label[@class='ideal-radiocheck-label'][contains(.,'Male')]");
+	
 
 	public By getCmpFirstname() {
 		return cmpFirstname;
@@ -71,5 +73,9 @@ public class Elementos_AbaEnterInsurantData {
 
 	public By getBtnNextEnterInsurantData() {
 		return btnNextEnterInsurantData;
+	}
+
+	public By getRdoGender() {
+		return rdoGender;
 	}
 }

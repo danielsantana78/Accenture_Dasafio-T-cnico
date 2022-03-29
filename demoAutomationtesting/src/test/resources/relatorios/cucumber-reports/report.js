@@ -28,7 +28,7 @@ formatter.match({
   "location": "Steps_AbaEnterVehicleData.queEuAcessoOSite(String)"
 });
 formatter.result({
-  "duration": 3151813500,
+  "duration": 4852464700,
   "status": "passed"
 });
 formatter.scenario({
@@ -79,42 +79,42 @@ formatter.match({
   "location": "Steps_AbaEnterVehicleData.preenchoOFormulárioAbaEnterVehicleDataEPressioneNext()"
 });
 formatter.result({
-  "duration": 1347537800,
+  "duration": 1322977500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_AbaEnterInsurantData.preenchoOFormulárioAbaEnterInsurantDataEPressioneNext()"
 });
 formatter.result({
-  "duration": 1338572300,
+  "duration": 1438769300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_AbaEnterProductData.preenchoOFormulárioAbaEnterProductDataEPressioneNext()"
 });
 formatter.result({
-  "duration": 740103600,
+  "duration": 733749000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_AbaSelectPriceOption.preenchoOFormulárioAbaSelectPriceOptionEPressioneNext()"
 });
 formatter.result({
-  "duration": 783090700,
+  "duration": 813712700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_AbaSendQuote.preenchoOFormulárioAbaSendQuoteEPressioneSend()"
 });
 formatter.result({
-  "duration": 721256800,
+  "duration": 772823100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_VerificacaoMensagemDeSucesso.verificoAMensagemSendingEMailSuccessNaTela()"
 });
 formatter.result({
-  "duration": 10163391100,
+  "duration": 10131904600,
   "status": "passed"
 });
 });
