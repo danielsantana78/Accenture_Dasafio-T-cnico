@@ -16,13 +16,10 @@ public class Elementos_AbaEnterInsurantData {
 	private By slcOccupation = By.xpath("//section[@class='idealsteps-step']//select[@id='occupation']");
 	private By rdoHobbiesSpeeding = By
 			.xpath("//div[@class='field idealforms-field idealforms-field-checkbox']//p//input[@id='other']");
-	private By rdoOther = By
-			.xpath("//p//label[@class='ideal-radiocheck-label'][contains(.,'Other')]");
+	private By rdoOther = By.xpath("//p//label[@class='ideal-radiocheck-label'][contains(.,'Other')]");
 	private By cmpWebSite = By.xpath("//section[@class='idealsteps-step']//input[@name='Website']");
 	private By cmpUpLoadPicture = By.xpath("//input[@class='ideal-file-filename']");
 	private By btnNextEnterInsurantData = By.xpath("//div//button[@id='nextenterproductdata']");
-
-	
 
 	public By getCmpFirstname() {
 		return cmpFirstname;

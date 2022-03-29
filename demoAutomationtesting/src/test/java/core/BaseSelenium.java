@@ -70,13 +70,11 @@ public class BaseSelenium {
 	public void clicar(By elemento) {
 		procurar(elemento).click();
 	}
-	
 
 	public void pegaTextoSpan(By elemento, String string) {
 		String desc = getDriver().findElement(elemento).getText();
 		assertEquals(desc, "-20%");
 	}
-	
 
 	public void comparaString(Object object, String text) {
 		assertEquals(text, object, text);
@@ -89,7 +87,12 @@ public class BaseSelenium {
 	public void anexarDocumentos() {
 		WebElement UP;
 		UP = BaseSelenium.getDriver().findElement(By.xpath("//input[@class='ideal-file-filename']"));
-		UP.sendKeys(new File("src\\test\\resources\\arquivosParaTeste").getAbsolutePath());
+		UP.sendKeys(new File("/src/test/resources/arquivosParaTeste/logo Accenture.png").getAbsolutePath());
+	}
+
+	public void upLoadImagem() {
+		WebElement upload_file = driver.findElement(By.xpath("//input[@class='ideal-file-filename']"));
+		upload_file.sendKeys("/src/test/resources/arquivosParaTeste/logo Accenture.png");
 	}
 
 	public void rolarScrollMeiaTela() {
@@ -116,15 +119,15 @@ public class BaseSelenium {
 	public void escrever(By elemento, String texto) {
 		procurar(elemento).sendKeys(texto);
 	}
-	
-	public void limparCampo(By elemento) {		
+
+	public void limparCampo(By elemento) {
 		procurar(elemento).clear();
 	}
-	
+
 	public String extrairTextoDoElemento(By elemento) {
 		return procurar(elemento).getText();
 	}
-	
+
 	public String extrairTextoDoObjeto(By elemento, String string) {
 		return procurar(elemento).getText();
 	}
@@ -226,20 +229,16 @@ public class BaseSelenium {
 		action.moveToElement(elemento).click().build().perform();
 	}
 
-	
 	public void moverParaElementoeClicar(By elemento) {
 		Actions action = new Actions(getDriver());
 		WebElement element = procurar(elemento);
 		action.moveToElement(element).click().build().perform();
 	}
-	
-	
+
 	public void mouseHover(WebElement elemento) {
 		Actions action = new Actions(driver);
 		action.moveToElement(elemento).click().build().perform();
 	}
-
-
 
 	public void dragAndDrop(WebElement item) {
 

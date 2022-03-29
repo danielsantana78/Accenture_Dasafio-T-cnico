@@ -8,7 +8,6 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 	private Elementos_AbaEnterInsurantData eleDesafio = new Elementos_AbaEnterInsurantData();
 
 	public void preenchoOFormulárioAbaEnterInsurantDataEPressioneNext() {
-
 		preencheCampoFirstName();
 		preencheCampoLasttName();
 		preencheCampoDateOfBirth();
@@ -16,13 +15,12 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 		selecionaCountry();
 		preencheCampoZipCode();
 		preencheCampoCity();
-		selecionaOccupation();		
-		clicaEmOther();		
+		selecionaOccupation();
+		clicaEmOther();
 		preencheCampoWebsite();
+		upLoadPicture(); // Upload Picture não funcionou corretamente
 		clicaNoBotaoNext();
-
 		// implementar Gender
-		// implementar anexarDocumentos();
 	}
 
 	// métodos dos preenchimentos dos campos
@@ -83,7 +81,7 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 		comboBoxPorValor(eleDesafio.getSlcOccupation(), "Selfemployed");
 		System.out.println("seleciona a opção Autônomo do campo Occupation");
 	}
-	
+
 	private void clicaEmOther() {
 		esperarElementoExistir(eleDesafio.getRdoOther());
 		System.out.println("verifica se o objeto id Other existe na tela");
@@ -96,6 +94,12 @@ public class Paginas_AbaEnterInsurantData extends BaseSelenium {
 		System.out.println("verifica se o objeto WebSite existe na tela");
 		escreveNoCampo(eleDesafio.getCmpWebSite(), "https://www.accenture.com/br-pt");
 		System.out.println("preenche o campo Website com o endereço do site da Accenture Brasil");
+	}
+
+	public void upLoadPicture() {
+		esperarElementoExistir(eleDesafio.getCmpUpLoadPicture());
+		System.out.println("verifica se o objeto ideal-file-wrap existe na tela");
+		anexarDocumentos();
 	}
 
 	private void clicaNoBotaoNext() {

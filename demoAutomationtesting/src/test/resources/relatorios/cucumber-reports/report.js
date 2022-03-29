@@ -1,9 +1,9 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Cenário Preenchimento .feature");
 formatter.feature({
   "line": 1,
-  "name": "Criar uma nova conta para usuário não cadastrado",
+  "name": "Preencher as abas Enter Vehicle Data, Enter Insurant Data, Enter Product Data, Select Price Option, Send Quote e Verificar a mensagem “Sending e-mail success!” na tela.",
   "description": "",
-  "id": "criar-uma-nova-conta-para-usuário-não-cadastrado",
+  "id": "preencher-as-abas-enter-vehicle-data,-enter-insurant-data,-enter-product-data,-select-price-option,-send-quote-e-verificar-a-mensagem-“sending-e-mail-success!”-na-tela.",
   "keyword": "Feature"
 });
 formatter.background({
@@ -28,14 +28,14 @@ formatter.match({
   "location": "Steps_AbaEnterVehicleData.queEuAcessoOSite(String)"
 });
 formatter.result({
-  "duration": 3311002300,
+  "duration": 4305255300,
   "status": "passed"
 });
 formatter.scenario({
   "line": 7,
   "name": "Preencher o formulario das abas Vehicle Data, Insurant Data, Product Data, Select Price Option e Send Quote",
   "description": "",
-  "id": "criar-uma-nova-conta-para-usuário-não-cadastrado;preencher-o-formulario-das-abas-vehicle-data,-insurant-data,-product-data,-select-price-option-e-send-quote",
+  "id": "preencher-as-abas-enter-vehicle-data,-enter-insurant-data,-enter-product-data,-select-price-option,-send-quote-e-verificar-a-mensagem-“sending-e-mail-success!”-na-tela.;preencher-o-formulario-das-abas-vehicle-data,-insurant-data,-product-data,-select-price-option-e-send-quote",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -79,42 +79,42 @@ formatter.match({
   "location": "Steps_AbaEnterVehicleData.preenchoOFormulárioAbaEnterVehicleDataEPressioneNext()"
 });
 formatter.result({
-  "duration": 1347373000,
+  "duration": 1427410700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_AbaEnterInsurantData.preenchoOFormulárioAbaEnterInsurantDataEPressioneNext()"
 });
 formatter.result({
-  "duration": 1184423100,
+  "duration": 1301182300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_AbaEnterProductData.preenchoOFormulárioAbaEnterProductDataEPressioneNext()"
 });
 formatter.result({
-  "duration": 769499400,
+  "duration": 732503100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_AbaSelectPriceOption.preenchoOFormulárioAbaSelectPriceOptionEPressioneNext()"
 });
 formatter.result({
-  "duration": 267935200,
+  "duration": 788071700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_AbaSendQuote.preenchoOFormulárioAbaSendQuoteEPressioneSend()"
 });
 formatter.result({
-  "duration": 735018500,
+  "duration": 755949000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps_VerificacaoMensagemDeSucesso.verificoAMensagemSendingEMailSuccessNaTela()"
 });
 formatter.result({
-  "duration": 10152382000,
+  "duration": 10134714000,
   "status": "passed"
 });
 });

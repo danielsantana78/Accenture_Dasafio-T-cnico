@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.767633">
-    <testcase classname="Criar uma nova conta para usuário não cadastrado" name="Preencher o formulario das abas Vehicle Data, Insurant Data, Product Data, Select Price Option e Send Quote" time="17.767633">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.445086">
+    <testcase classname="Preencher as abas Enter Vehicle Data, Enter Insurant Data, Enter Product Data, Select Price Option, Send Quote e Verificar a mensagem “Sending e-mail success!” na tela." name="Preencher o formulario das abas Vehicle Data, Insurant Data, Product Data, Select Price Option e Send Quote" time="19.445086">
         <system-out><![CDATA[Given que eu acesso O Site  "http://sampleapp.tricentis.com/101/app.php"....passed
 When Preencho o formulário, aba “Enter Vehicle Data” e pressione next.......passed
 And Preencho o formulário, aba “Enter Insurant Data” e pressione next.......passed
