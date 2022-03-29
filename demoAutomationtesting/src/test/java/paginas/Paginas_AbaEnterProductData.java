@@ -23,7 +23,7 @@ public class Paginas_AbaEnterProductData extends BaseSelenium {
 	private void preencheCampoStartDate() {
 		esperarElementoExistir(eleDesafio.getCmpStartDate());
 		System.out.println("verifica se o objeto StartDate existe na tela");
-		escreveNoCampo(eleDesafio.getCmpStartDate(), "04/29/2022");
+		escreveNoCampo(eleDesafio.getCmpStartDate(), "05/30/2022");
 		System.out.println("preenche o campo Start Date com uma data");
 	}
 
